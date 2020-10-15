@@ -1,12 +1,23 @@
+import pytest 
+from exception.DadosMinimosExcpetion import DadosMinimosExcepetion
+
+
 def test_estrutura_pendencia():
+      
+
   # arrange
-  nome = "Teste Pendencia"
+  name = "Teste Pendencia"
   status = "Pendente"
 
   # act
   from domain.model import Pendencia
-  pend = Pendencia(nome, status)
+  pend = Pendencia(name, status)
   
   # assert
-  assert pend.nome == nome
+  assert pend.name == name
   assert pend.status == status
+
+  try:
+    pend = Pendencia()
+  except:
+    DadosMinimosExcepetion("Objeto instanciado sem parametros")
