@@ -1,0 +1,8 @@
+1. registrar pendencias
+  > Garantir que a estrutura de uma pendencia seja:
+    - nome(string) e status (string)
+  > Garantir que uma pendencia possa ser criada com os dados nome e string NO MINIMO
+    - caso nao sejam informados os dados na construcao, uma excecao DadosMinimosException será lançada
+2. listar todas as pendencias cadastradas
+3. atualizar status de pendencia para [concluido/pendente]
+4. excluir pendencia
